@@ -1,14 +1,14 @@
 'use strict';
 
-// define clothes schema 
+// define clothes schema
 const mongoose = require('mongoose');
 const clothesSchema = mongoose.Schema({
-    name: {type: String, require: true},
-    made_in : {type: String, require: true},
-    quantity: {type: Number, require: true},
-    // made_date: {type: new Date() }
-})
+  name: {type: String, require: true},
+  made_in : {type: String, require: true},
+  quantity: {type: Number, require: true},
+  // made_date: {type: new Date() }
+});
 
-// create model 
+// create model
 const clotheModel = mongoose.model('clothes', clothesSchema);
-module.exports = clotheModel; 
+module.exports = clotheModel;

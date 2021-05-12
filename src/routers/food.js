@@ -7,12 +7,14 @@ const router = express.Router();
 // require model DB
 const foodModel = require('../models/food')
 const clothesModel = require('../models/clothes')
+// console.log(foodModel.find());
+// console.log(clothesModel);
 
 // require class pages
 const ModelCollection = require('../models/data-collection-class');
 const foodInstance = new ModelCollection(foodModel);
 const clothesInstance = new ModelCollection(clothesModel);
-
+// console.log(foodInstance.model.name.find());
 let instance;
 function checkRoute(req, res, next) {
     if(req.path === '/food') {
