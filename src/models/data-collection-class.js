@@ -1,10 +1,11 @@
 'use strict';
 
 // const { findById } = require("./food");
-
+let newArr = [];
 class ModelCollection {
     constructor(model) {
         this.model = model;
+        newArr.push(this.model)
     }
 
     get(_id) {
@@ -46,6 +47,5 @@ class ModelCollection {
         return deleted
     }
 }
-
 
 module.exports = ModelCollection;
