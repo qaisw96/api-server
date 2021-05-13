@@ -16,7 +16,7 @@ const router = routePage.router;
 
 app.use(routePage.checkRoute);
 
-
+// middleware to shift between routes depend on client request
 app.use('/food', router);
 app.use('/clothes', router);
 
