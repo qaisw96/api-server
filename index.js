@@ -6,7 +6,7 @@ const server = require('./src/server');
 // import variables from .env
 const {PORT, MONGODB_URI} = process.env;
 
-// start the server 
+// start the server ------------------
 server.start(PORT, MONGODB_URI);
 
 
