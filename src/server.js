@@ -19,6 +19,7 @@ app.use(routePage.checkRoute);
 // middleware to shift between routes depend on client request
 app.use('/food', router);
 app.use('/clothes', router);
+app.use('/todo', router);
 
 // error handlers middleware
 app.use('*', notFoundHandler);
