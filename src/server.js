@@ -25,6 +25,7 @@ app.use('/food', router);
 app.use('/clothes', router);
 app.use('/todo', router);
 app.use('/store', router);
+app.use('/cart', router);
 
 // error handlers middleware
 app.use('*', notFoundHandler);
