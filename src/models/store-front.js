@@ -6,7 +6,7 @@ const storeSchema = mongoose.Schema({
   name: {type: String, require: true},
   price : {type: Number},
   Image: {type: String},
-  isStock:{type: String},
+  isStock:{type: Number},
   category: {type: String}
   // made_date: {type: new Date() }
 });
