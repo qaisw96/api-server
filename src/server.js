@@ -24,6 +24,7 @@ app.use(routePage.checkRoute);
 app.use('/food', router);
 app.use('/clothes', router);
 app.use('/todo', router);
+app.use('/store', router);
 
 // error handlers middleware
 app.use('*', notFoundHandler);

@@ -7,12 +7,14 @@ const router = express.Router();
 const foodModel = require('../models/food')
 const clothesModel = require('../models/clothes')
 const todoModel = require('../models/todo')
+const storeModel = require('../models/store-front')
 
 // require class pages
 const ModelCollection = require('../models/data-collection-class');
 const foodInstance = new ModelCollection(foodModel);
 const clothesInstance = new ModelCollection(clothesModel);
 const todoInstance = new ModelCollection(todoModel);
+const storeInstance = new ModelCollection(storeModel);
 let instance;
 // middleware function to check which route is requested
 // And therefore make instance collection depends on req route
@@ -24,6 +26,8 @@ function checkRoute(req, res, next) {
         instance = clothesInstance
     } else if(req.path === '/todo') {
         instance = todoInstance
+    } else if(req.path === '/store') {
+        instance = storeInstance
     }
     next()
 }
