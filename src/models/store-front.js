@@ -12,5 +12,5 @@ const storeSchema = mongoose.Schema({
 });
 
 // create model
-const storeModel = mongoose.model('todo', storeSchema);
+const storeModel = mongoose.model('store', storeSchema);
 module.exports = storeModel;
